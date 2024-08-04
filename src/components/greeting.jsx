@@ -27,7 +27,7 @@ const Title = styled.p`
 `;
 
 const Content = styled.p`
-  font-size: 0.5rem;
+  font-size: 0.3rem;
   line-height: 1.75;
   opacity: 0.75;
   margin-bottom: 16px;
@@ -36,10 +36,9 @@ const Content = styled.p`
 `;
 
 const GroomBride = styled.p`
-  font-size: 0.875rem;
+  font-size: 0.5rem;
   line-height: 1.75;
   opacity: 0.85;
-  margin-bottom: 0px;
   width: 100%;
   text-align: center;
 `;
@@ -72,7 +71,7 @@ const Greeting = () => {
         <br />
       </Content>
       <GroomBride>
-        {GROOM_FATHER_NAME} · {GROOM_MOTHER_NAME}의 장남 {GROOM_NAME}
+        {GROOM_FATHER_NAME} · {GROOM_MOTHER_NAME}의 차남 {GROOM_NAME}
         <br />
         {BRIDE_FATHER_NAME} · {BRIDE_MOTHER_NAME}의 장녀 {BRIDE_NAME}
       </GroomBride>

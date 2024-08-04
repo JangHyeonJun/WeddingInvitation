@@ -16,7 +16,7 @@ const Wrapper = styled.div`
 const Content = styled.span`
   display: block;
   margin: 0 auto;
-  font-size: 1rem;
+  font-size: 0.5rem;
   font-weight: bold;
   font-family: Pretendard;
   text-align: center;

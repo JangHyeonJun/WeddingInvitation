@@ -13,10 +13,11 @@ const Title = styled.span`
   color: var(--pink-color);
   font-weight: bold;
   opacity: 0.85;
+  text-align: center;
 `;
 
 const Content = styled.p`
-  font-size: 0.75rem;
+  font-size: 0.35rem;
   color: var(--pink-color);
   line-height: 1.75;
   opacity: 0.75;
@@ -93,9 +94,9 @@ const Link = styled.a`
   text-decoration: none;
   color: #ffffff; /* Change this to your desired link color */
   background: #204231; /* Button background color */
-  padding: 8px 12px; /* Reduced padding for smaller buttons */
+  padding: 3px 4px; /* Reduced padding for smaller buttons */
   border-radius: 5px;
-  font-size: 0.75rem;
+  font-size: 0.35rem;
   transition: background-color 0.3s;
 
   &:hover {
@@ -129,7 +130,7 @@ const Link = styled.a`
       white-space: nowrap; /* Prevent line breaks */
       padding: 8px;
       text-align: left;
-      font-size: 0.75rem;
+      font-size: 0.3rem;
     }
 
     button.copy-btn {

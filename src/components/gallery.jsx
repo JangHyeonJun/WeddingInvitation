@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.p`
-  font-size: 1rem;
+  font-size: 0.6rem;
   color: var(--title-color);
   font-weight: bold;
   opacity: 0.85;
@@ -56,7 +56,7 @@ const Gallery = () => {
   return (
     <Wrapper>
       <Divider style={{ marginTop: 0, marginBottom: 32 }} plain>
-        <Title>우리의 아름다운 순간</Title>
+        <Title>Gallery</Title>
       </Divider>
       <ImageGallery
         showPlayButton={false}

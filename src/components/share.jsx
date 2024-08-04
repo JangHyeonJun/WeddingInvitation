@@ -19,7 +19,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.span`
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   color: var(--pink-color);
   font-weight: bold;
   opacity: 0.85;
