@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { WeddingCoupleIcon, MapIcon } from "./Icon"; // Ensure path is correct
-import BackgroundImage from "../images/front.jpg"; // Ensure path is correct
+import { WeddingCoupleIcon, MapIcon } from "./icon";
+import BackgroundImage from "../images/front.jpg";
 
 const FrontSection = styled.section`
   height: 100vh;
