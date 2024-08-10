@@ -27,7 +27,7 @@ const Title = styled.p`
 `;
 
 const Content = styled.p`
-  font-size: 0.3rem;
+  font-size: 0.5rem;
   line-height: 1.75;
   opacity: 0.75;
   margin-bottom: 16px;
@@ -37,8 +37,10 @@ const Content = styled.p`
 
 const GroomBride = styled.p`
   font-size: 0.5rem;
+  font-weight: 600;
   line-height: 1.75;
   opacity: 0.85;
+  margin-bottom: 0px;
   width: 100%;
   text-align: center;
 `;
@@ -54,26 +56,25 @@ const Greeting = () => {
   return (
     <Wrapper>
       <Divider>
-        <Title>초대합니다</Title>
+        <Title>어서옵쇼</Title>
       </Divider>
-      <Image src={Flower} />
       <Content>
-        서로 마주 보며 다져온 사랑을
+        만수무강 하십쇼
         <br />
-        이제 함께 한곳을 바라보며 걸어갈 수 있는
+        내용은 아직 정하지 못했어요
         <br />
-        큰 사랑으로 키우고자 합니다.
+        이건 테스트페이지라 못봄
         <br />
-        저희 두 사람이 사랑의 이름으로 지켜나갈 수 있게
+        킬킬킬킬킬
         <br />
-        앞날을 축복해 주시면 감사하겠습니다.
+        곧 완성됩니다 ㅎ.
         <br />
         <br />
       </Content>
       <GroomBride>
-        {GROOM_FATHER_NAME} · {GROOM_MOTHER_NAME}의 차남 {GROOM_NAME}
+        {GROOM_FATHER_NAME} · {GROOM_MOTHER_NAME} 의 장남 {GROOM_NAME}
         <br />
-        {BRIDE_FATHER_NAME} · {BRIDE_MOTHER_NAME}의 장녀 {BRIDE_NAME}
+        {BRIDE_FATHER_NAME} · {BRIDE_MOTHER_NAME} 의 장녀 {BRIDE_NAME}
       </GroomBride>
       <br />
       <br />

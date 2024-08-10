@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { WeddingCoupleIcon, MapIcon } from "./icon";
-import BackgroundImage from "../images/front.jpg";
+import { WeddingCoupleIcon, MapIcon } from "./Icon"; // Ensure path is correct
+import BackgroundImage from "../images/front.jpg"; // Ensure path is correct
+import WeddingPlaneImage from "../images/wedding_plane.svg"
 
 const FrontSection = styled.section`
   height: 100vh;
@@ -46,14 +47,13 @@ const CenterWrap = styled.div`
 
 const LinkButton = styled.a`
   display: block;
-  font-size: 0.8rem;
   font-weight: bold;
   line-height: 1.4rem;
   width: 3rem;
   height: 1.4rem;
   padding-top: 2.2rem;
   position: absolute;
-  bottom: 15.5vh;
+  bottom: 150.5vh;
   color: #ffffff;
   text-align: center;
   z-index: 1;
@@ -92,22 +92,28 @@ const Title = () => {
     <FrontSection id="front">
       <Curtain />
       <CenterWrap>
-        <h1>2024. 12. 01.</h1>
-        <h2>현준, 혜인</h2>
-        <p>저희 결혼합니다.</p>
+        <h1>2024.12.01.</h1>
+        <img
+          src={WeddingPlaneImage}
+          width={200}
+          height={250}
+        />
+        <h2>ㅤ</h2>
+        <h2>ㅤ</h2>
+        
       </CenterWrap>
       <LinkButton
         className="go-to go-to-wedding"
         onClick={handleScrollToGallery}
         data-margin-top="120"
       >
-        <WeddingCoupleIcon width={52} height={24} />
+        <WeddingCoupleIcon width={50} height={24} />
         웨딩 사진
       </LinkButton>
       <LinkButton className="go-to go-to-welcome"
         onClick={handleScrollToLocation}
         data-margin-top="120">
-        <MapIcon width={52} height={24} />
+        <MapIcon width={30} height={24} />
         오시는 길
       </LinkButton>
     </FrontSection>

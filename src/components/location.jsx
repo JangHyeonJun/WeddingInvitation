@@ -4,30 +4,26 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   padding-top: 42px;
-  width: 70%;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
 `;
 
 const Title = styled.span`
-  font-size: 1rem;
+  font-size: 0.7rem;
   color: var(--pink-color);
   font-weight: bold;
   opacity: 0.85;
-  text-align: center;
 `;
 
 const Content = styled.p`
-  font-size: 0.35rem;
+  font-size: 0.4rem;
   color: var(--pink-color);
-  line-height: 1.75;
-  opacity: 0.75;
-  width: 100%;
+  white-space: nowrap;
   text-align: center;
+  max-width: 100%;
 `;
 
 const Map = styled.div`
-  width: 100%;
-  padding: 0;
 `;
 
 const Location = () => {
@@ -80,79 +76,35 @@ const Location = () => {
     })();
   };
 
-  const LinksContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding: 20 20px; /* Add padding for spacing from edges */
-  margin-top: 20px;
-  max-width: 500px; /* Adjust the maximum width as needed */
-  margin-left: auto;
-  margin-right: auto;
-`;
+//   const LinksContainer = styled.div`
+//   display: flex;
+//   justify-content: space-between;
+//   padding: 20 20px; /* Add padding for spacing from edges */
+//   margin-top: 20px;
+//   margin-left: auto;
+//   margin-right: auto;
+// `;
 
-const Link = styled.a`
-  text-decoration: none;
-  color: #ffffff; /* Change this to your desired link color */
-  background: #204231; /* Button background color */
-  padding: 3px 4px; /* Reduced padding for smaller buttons */
-  border-radius: 5px;
-  font-size: 0.35rem;
-  transition: background-color 0.3s;
+// const Link = styled.a`
+//   text-decoration: none;
+//   color: #ffffff; /* Change this to your desired link color */
+//   background: #204231; /* Button background color */
+//   padding: 8px 12px; /* Reduced padding for smaller buttons */
+//   border-radius: 5px;
+//   font-size: 0.75rem;
+//   transition: background-color 0.3s;
 
-  &:hover {
-    background: #0c7c44; /* Hover color */
-  }
-`;
+//   &:hover {
+//     background: #0c7c44; /* Hover color */
+//   }
+// `;
 
-  const CongratulatorySection = styled.section`
-  padding: 20px;
-  margin-top: 20px;
-  background-color: var(--pink-background);
-  border-radius: 5px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-
-  h4 {
-    color: var(--pink-color); /* Title color */
-    margin-bottom: 20px;
-  }
-
-  table {
-    transform: translateX(-15%);
-    color: var(--pink-color);
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-
-    td {
-      white-space: nowrap; /* Prevent line breaks */
-      padding: 8px;
-      text-align: left;
-      font-size: 0.3rem;
-    }
-
-    button.copy-btn {
-      background-color: #204231;
-      color: var(--pink-color);
-      border: none;
-      padding: 5px 10px;
-      border-radius: 3px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-
-      &:hover {
-        background-color: #0c7c44;
-      }
-    }
-  }
-  `;
 
   const IconTray = styled.div`
   display: flex;
   justify-content: center; /* Centers the content horizontally */
   align-items: center; /* Centers the content vertically if needed */
+  margin-top: 50px;
   margin-bottom: 20px; /* Adjust spacing as needed */
   `;
 
@@ -166,50 +118,16 @@ const Link = styled.a`
         <Title>오시는 길</Title>
       </Divider>
       <Content>
-        2024년 12월 1일 오후 12시 40분
-      </Content>
-      <Content>
-       영등포 더컨벤션 1층 그랜드볼룸 홀
-       <br />
-       <br />
+        2024년 12월 1일 오후 12시 40분<br/>
+        더컨벤션 영등포, 1층 그랜드볼룸
+        <br/>
+        <br/>
+        <br/>
       </Content>
       <Map
         id="daumRoughmapContainer1722790509020"
         className="root_daum_roughmap root_daum_roughmap_landing"
       ></Map>
-      <LinksContainer>
-        <Link href="https://naver.me/51YnwEa7" target="_blank" rel="noopener noreferrer">
-          네이버 지도
-        </Link>
-        <Link href="https://naver.me/51YnwEa7" target="_blank" rel="noopener noreferrer">
-          웨딩홀 약도
-        </Link>
-      </LinksContainer>
-      <CongratulatorySection id="congratulatory">
-        <h4>마음 전하는 곳</h4>
-        <table>
-          <tbody>
-            <tr>
-              <td><b>신랑측</b></td>
-              <td>
-                <span>국민은행 669102-01-472320 (장현준)</span>
-              </td>
-              <td>
-                <button className="copy-btn" data-clipboard-text="669102-01-472320">복사</button>
-              </td>
-            </tr>
-            <tr>
-              <td><b>신부측</b></td>
-              <td>
-                <span>국민은행 867702-04-107540 (조혜인)</span>
-              </td>
-              <td>
-                <button className="copy-btn" data-clipboard-text="867702-04-107540">복사</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </CongratulatorySection>
       <IconTray>
         <span className="tf xsmall man-with-tuxido"></span>
         <span className="tf xsmall woman-with-veil"></span>

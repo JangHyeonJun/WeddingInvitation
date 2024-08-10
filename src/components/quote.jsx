@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import QuotePaper from "../assets/Quote.png";
-import Flower from "../assets/flower1.png";
 
 const Wrapper = styled.div`
   padding-top: 42px;
@@ -16,12 +15,12 @@ const Wrapper = styled.div`
 const Content = styled.span`
   display: block;
   margin: 0 auto;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   font-weight: bold;
   font-family: Pretendard;
   text-align: center;
   color: var(--title-color);
-  line-height: 2.25rem;
+  line-height: 1rem;
   opacity: 0.75;
   background-image: url(${QuotePaper});
   background-repeat: no-repeat;
@@ -54,7 +53,7 @@ const Quote = () => {
         <br />
       </Content>
       <Icon>
-        <span class="tf wedding-hall wedding-icon"></span>
+        <span class="tf xsmall wedding-hall wedding-icon"></span>
       </Icon>
     </Wrapper>
   );

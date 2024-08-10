@@ -13,13 +13,17 @@ import {
 } from "../../config";
 
 const Wrapper = styled.div`
-  padding-top: 42px;
+  font-family: Pretendard;
+  font-size: 0.4rem;
+  font-weight: 700;
   width: 100%;
+  height: 100%;
   text-align: center;
+  line-height: 1.3rem;
 `;
 
 const Title = styled.span`
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   color: var(--pink-color);
   font-weight: bold;
   opacity: 0.85;
@@ -105,7 +109,6 @@ const Share = () => {
         plain
         style={{ marginTop: 0, marginBottom: 32 }}
       >
-        <Title>청첩장 공유하기 📧</Title>
       </Divider>
       <KakaoTalkShareButton
         style={{ margin: 0, backgroundColor: "#fee500" }}
@@ -126,6 +129,14 @@ const Share = () => {
           링크로 공유하기
         </LinkShareButton>
       </CopyToClipboard>
+      
+      Made By HyeonJun
+      
+      <Divider
+        plain
+        style={{ marginTop: 80, marginBottom: 0 }}
+      >
+      </Divider>
     </Wrapper>
   );
 };

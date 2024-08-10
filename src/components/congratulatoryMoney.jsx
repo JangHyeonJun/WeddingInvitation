@@ -28,7 +28,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.p`
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: bold;
   opacity: 0.85;
   margin-bottom: 0;
@@ -42,17 +42,22 @@ const Content = styled.p`
 `;
 
 const SubContent = styled.p`
-  font-size: 0.875rem;
+  font-size: 0.5rem;
+  font-weight: 800;
   line-height: 1.75;
   opacity: 0.75;
+  margin-left: 10px;
+  margin-right: 10px;
   margin-bottom: 42px;
 `;
 
 const Description = styled.p`
-  font-size: 0.875rem;
+  font-size: 0.4rem;
   line-height: 1.75;
   opacity: 0.65;
   margin-top: 8px;
+  margin-left: 7px;
+  text-align: left;
 `;
 
 const ButtonWrap = styled.div`
@@ -64,15 +69,7 @@ const ButtonWrap = styled.div`
 `;
 const ContactButton = styled.div`
   width: 10.75rem;
-  border: 1px solid #efddde;
   padding: 2.188rem 0;
-`;
-
-const Image = styled.img`
-  display: block;
-  margin: 0 auto;
-  width: 1.375rem;
-  padding-bottom: 42px;
 `;
 
 const CongratulatoryMoney = () => {
@@ -81,27 +78,23 @@ const CongratulatoryMoney = () => {
 
   return (
     <Wrapper>
-      <Divider
-        plain
-        style={{ marginTop: 0, marginBottom: 32 }}
-      >
-      </Divider>
+      <Title>마음 전하는 곳</Title>
       <ButtonWrap>
         <ContactButton onClick={() => setGroomVisible(true)}>
           <CheckCircleTwoTone
-            style={{ fontSize: 64, marginBottom: 16 }}
+            style={{ fontSize: 30, marginBottom: 16 }}
             twoToneColor="#829fe0"
           />
           <br />
-          <SubContent>신랑측 계좌번호 확인</SubContent>
+          <SubContent>신랑측 계좌번호</SubContent>
         </ContactButton>
         <ContactButton onClick={() => setBrideVisible(true)}>
           <CheckCircleTwoTone
-            style={{ fontSize: 64, marginBottom: 16 }}
+            style={{ fontSize: 30, marginBottom: 16 }}
             twoToneColor="#fe7daf"
           />
           <br />
-          <SubContent>신부측 계좌번호 확인</SubContent>
+          <SubContent>신부측 계좌번호</SubContent>
         </ContactButton>
       </ButtonWrap>
       <Modal
@@ -121,14 +114,14 @@ const CongratulatoryMoney = () => {
           <CopyToClipboard text={GROOM_FATHER_ACCOUNT_NUMBER}>
             <Button
               type="text"
-              style={{ padding: 0, margin: 0 }}
+              style={{ padding: 0, margin: 0, justifyContent: 'center' }}
               onClick={() => message.success("계좌번호가 복사되었습니다.")}
             >
               {GROOM_FATHER_ACCOUNT_NUMBER}
             </Button>
           </CopyToClipboard>
         </div>
-        <div style={{ marginTop: 24, marginBottom: 24 }}>
+        <div>
           <b>모 : {GROOM_MOTHER_NAME}</b>
           <Divider type="vertical" />
           <CopyToClipboard text={GROOM_MOTHER_ACCOUNT_NUMBER}>
@@ -179,8 +172,8 @@ const CongratulatoryMoney = () => {
             </Button>
           </CopyToClipboard>
         </div>
-        <div style={{ marginTop: 24, marginBottom: 24 }}>
-          <b>모 :{BRIDE_MOTHER_NAME}</b>
+        <div>
+          <b>모 : {BRIDE_MOTHER_NAME}</b>
           <Divider type="vertical" />
           <CopyToClipboard text={BRIDE_MOTHER_ACCOUNT_NUMBER}>
             <Button

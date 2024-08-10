@@ -15,12 +15,10 @@
   --pink-color: rgb(32, 66, 49);
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 html, body {
-  font-size: 36px;
+  overflow-x: hidden;
+  font-size: 60px;
   color: var(--main-color);
   background: var(--main-background);
   margin: 0;
@@ -29,6 +27,27 @@ html, body {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
   -webkit-overflow-scrolling: touch;
   overflow-y: scroll;
+}
+
+
+@media (max-width: 450px) {
+  html, body {
+    font-size: 40px; /* Adjust font size for mobile */
+  }
+}
+@media (max-width: 400px) {
+  html, body {
+    font-size: 36px; /* Adjust font size for mobile */
+  }
+}
+@media (max-width: 350px) {
+  html, body {
+    font-size: 32px; /* Adjust font size for mobile */
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -102,16 +121,23 @@ section .clearfix:after {
 }
 
 #front h1 {
+  font-weight: 700;
   line-height: 4rem;
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.0rem;
   text-align: center;
 }
 
 #front h2 {
-  padding: 0.2rem 0;
-  line-height: 2rem;
-  font-size: 1.5rem;
+  padding: 0.2rem;
+  line-height: 0.5rem;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+#front h3 {
+  padding: 0.2rem;
+  line-height: 0.5rem;
+  font-size: 0.4rem;
   text-align: center;
 }
 
@@ -158,7 +184,6 @@ section .clearfix:after {
   width: 1.2rem;
   height: 2rem;
   margin-left: -0.6rem;
-  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 2rem;
   box-sizing: border-box;
 }
@@ -179,7 +204,7 @@ section .clearfix:after {
 
 #front a.go-to-wedding {
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.4rem;
   line-height: 1.4rem;
   width: 3rem;
   height: 1.4rem;
@@ -195,13 +220,13 @@ section .clearfix:after {
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  height: 1.5rem;
+  height: 2.5rem;
   color: #fff;
 }
 
 #front a.go-to-welcome {
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.4rem;
   line-height: 1.4rem;
   width: 3rem;
   height: 1.4rem;
@@ -217,7 +242,7 @@ section .clearfix:after {
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  height: 1.5rem;
+  height: 2.5rem;
   color: #fff;
 }
 
@@ -377,7 +402,7 @@ section .clearfix:after {
 }
 
 #location {
-  padding: 5vh 100px;
+  padding: 5vh 30px;
 }
 
 #location h4 {
@@ -385,15 +410,9 @@ section .clearfix:after {
   text-align: center;
 }
 
-#location #image-map {
-  width: 95%;
-  margin: 50px auto;
-  display: block;
-}
-
 #location p {
-  font-size: 0.8rem;
-  line-height: 1.2rem;
+  font-size: 0.4rem;
+  line-height: 0.7rem;
   margin: 0;
   text-align: center;
 }
@@ -429,7 +448,6 @@ section .clearfix:after {
   text-align: center;
   color: #ffffff;
   background: #204231;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 0.8rem;
   line-height: 2rem;
 }
@@ -460,7 +478,6 @@ section .clearfix:after {
 
 #congratulatory table td .copy-btn {
   display: inline-block;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   background: #204231;
   color: #ffffff;
   line-height: 1rem;
@@ -473,7 +490,6 @@ section .clearfix:after {
 
 #congratulatory table td .copy-btn:hover {
   background: #0c7c44;
-  border: 1px solid #4f4f4f;
 }
 
 #thanks-to {
@@ -493,7 +509,6 @@ section .clearfix:after {
 #thanks-to .share {
   display: inline-block;
   margin: 0 auto 5vh;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   background: #204231;
   color: #ffffff;
   line-height: 1rem;
