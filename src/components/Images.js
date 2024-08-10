@@ -18,60 +18,80 @@ const images = [   /* 이미지 경로를 리스트로 저장 */
   {
     alt: 'image01',
     source: image01,
-    width: "373",
-    height: "263",
+    width: "500",
+    height: "353",
   },
   {
     alt: 'image02',
     source: image02,
-    width: "259",
-    height: "388",
+    width: "400",
+    height: "600",
   },
   {
     alt: 'image03',
     source: image03,
-    width: "259",
-    height: "388",
+    width: "400",
+    height: "600",
   },{
     alt: 'image04',
     source: image04,
-    width: "259",
-    height: "388",
+    width: "400",
+    height: "600",
   },{
     alt: 'image05',
     source: image05,
-    width: "259",
-    height: "388",
+    width: "400",
+    height: "600",
   },{
     alt: 'image06',
     source: image06,
+    width: "400",
+    height: "600",
   },{
     alt: 'image07',
     source: image07,
+    width: "400",
+    height: "600",
   },{
     alt: 'image08',
     source: image08,
+    width: "400",
+    height: "600",
   },{
     alt: 'image09',
     source: image09,
+    width: "400",
+    height: "600",
   },{
     alt: 'image10',
     source: image10,
+    width: "400",
+    height: "600",
   },{
     alt: 'image11',
     source: image11,
+    width: "400",
+    height: "600",
   },{
     alt: 'image12',
     source: image12,
+    width: "400",
+    height: "600",
   },{
     alt: 'image13',
     source: image13,
+    width: "400",
+    height: "600",
   },{
     alt: 'image14',
     source: image14,
+    width: "400",
+    height: "600",
   },{
     alt: 'image15',
     source: image15,
+    width: "400",
+    height: "600",
   }
 ];
 
