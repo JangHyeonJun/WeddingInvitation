@@ -63,7 +63,7 @@ const PlusButton = styled.div`
   font-weight: 700;
   text-align: center;
   align-items: center;
-  border: 0.5px solid #dfdfdf;
+  border: 1px solid #dfdfdf;
   cursor: pointer;
   margin-top: 0.4rem;
 `;

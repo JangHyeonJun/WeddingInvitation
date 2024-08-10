@@ -13,12 +13,20 @@ const PhotoGallery = () => {
 
   const galleryOptions = {
     zoom: false, // Disable zoom feature
-    maxZoomLevel: 1, // Prevent further zoom in
+    maxZoomLevel: 0, // Prevent further zoom in
     showHideOpacity: true, // Other options you may want to include
   };
 
+  const onOpen = (galleryInstance) => {
+    // Hide the close button when the gallery opens
+    const closeButton = document.querySelector('.pswp__button--close');
+    if (closeButton) {
+      closeButton.style.display = 'none'; // Hide the close button
+    }
+  };
+
   return (
-    <Gallery options={galleryOptions}>
+    <Gallery options={galleryOptions} onOpen={onOpen}>
       <div
         style={{
           display: 'grid',

@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 import "react-image-gallery/styles/css/image-gallery.css";
 import "antd/dist/antd.css";
-import Gallery from "../components/gallery";
 import PhotoGallery from "../components/GalleryWrap";
 import Greeting from "../components/greeting";
 import Title from "../components/title";
@@ -58,20 +58,30 @@ const IndexPage = () => {
 
   return (
     <Wrapper>
+      
+      <Helmet>
+        <title>현준 ♥ 혜인</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="현준 ♥ 혜인" />
+        <meta property="og:description" content="Join us for our special day!" />
+        <meta property="og:image" content="../images/front.jpg" />
+        <meta property="og:url" content="https://hyeonjun-hyein.netlify.app/" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
       <DarkGradientWrapper>
         <Title />
         <Greeting />
-
         <div id="gallery">
           <PhotoGallery />
         </div>
         <Quote />
       </DarkGradientWrapper>
-      <PinkWrapper>
 
+      <PinkWrapper>
         <div id="location">
           <Location />
-        </div>
+        </div>        
         <CongratulatoryMoney />
         <Share />
       </PinkWrapper>
