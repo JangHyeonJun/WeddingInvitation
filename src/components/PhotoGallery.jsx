@@ -13,15 +13,14 @@ const PhotoGallery = () => {
 
   const galleryOptions = {
     zoom: false, // Disable zoom feature
-    maxZoomLevel: 0, // Prevent further zoom in
-    showHideOpacity: true, // Other options you may want to include
+    maxZoomLevel: 1, // Prevent further zoom in
   };
 
   const onOpen = (galleryInstance) => {
     // Hide the close button when the gallery opens
     const closeButton = document.querySelector('.pswp__button--close');
     if (closeButton) {
-      closeButton.style.display = 'none'; // Hide the close button
+      closeButton.style.display = 'block'; // Hide the close button
     }
   };
 
