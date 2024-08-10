@@ -18,28 +18,30 @@ const images = [   /* 이미지 경로를 리스트로 저장 */
   {
     alt: 'image01',
     source: image01,
-    width: "3736",
-    height: "2634",
+    width: "373",
+    height: "263",
   },
   {
     alt: 'image02',
     source: image02,
-    width: "2592",
-    height: "3888",
+    width: "259",
+    height: "388",
   },
   {
     alt: 'image03',
     source: image03,
-    width: "2592",
-    height: "3888",
+    width: "259",
+    height: "388",
   },{
     alt: 'image04',
     source: image04,
-    width: "2592",
-    height: "3888",
+    width: "259",
+    height: "388",
   },{
     alt: 'image05',
     source: image05,
+    width: "259",
+    height: "388",
   },{
     alt: 'image06',
     source: image06,
