@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { WeddingCoupleIcon, MapIcon } from "./Icon"; // Ensure path is correct
+import { WeddingCoupleIcon, MapIcon } from "./icon"; // Ensure path is correct
 import BackgroundImage from "../images/front.jpg"; // Ensure path is correct
 import WeddingPlaneImage from "../images/wedding_plane.svg"
 
