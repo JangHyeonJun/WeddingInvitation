@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Button, Divider, message, Modal } from "antd";
-import { CheckCircleTwoTone } from "@ant-design/icons";
+import BoyIcon from "../images/boyIcon.svg";
+import GirlIcon from "../images/girlIcon.svg";
 import styled from "styled-components";
 import CopyToClipboard from "react-copy-to-clipboard";
-import Flower from "../assets/flower3.png";
 import {
   GROOM_NAME,
   GROOM_ACCOUNT_NUMBER,
@@ -61,7 +61,7 @@ const Description = styled.p`
 `;
 
 const ButtonWrap = styled.div`
-  margin-bottom: 3.125rem;
+  margin-bottom: 0rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -69,7 +69,7 @@ const ButtonWrap = styled.div`
 `;
 const ContactButton = styled.div`
   width: 10.75rem;
-  padding: 2.188rem 0;
+  padding: 1rem 0;
 `;
 
 const CongratulatoryMoney = () => {
@@ -81,17 +81,19 @@ const CongratulatoryMoney = () => {
       <Title>마음 전하는 곳</Title>
       <ButtonWrap>
         <ContactButton onClick={() => setGroomVisible(true)}>
-          <CheckCircleTwoTone
-            style={{ fontSize: 30, marginBottom: 16 }}
-            twoToneColor="#829fe0"
+          <img
+          src={BoyIcon}
+          width={40}
+          height={40}
           />
           <br />
           <SubContent>신랑측 계좌번호</SubContent>
         </ContactButton>
         <ContactButton onClick={() => setBrideVisible(true)}>
-          <CheckCircleTwoTone
-            style={{ fontSize: 30, marginBottom: 16 }}
-            twoToneColor="#fe7daf"
+          <img
+          src={GirlIcon}
+          width={40}
+          height={40}
           />
           <br />
           <SubContent>신부측 계좌번호</SubContent>

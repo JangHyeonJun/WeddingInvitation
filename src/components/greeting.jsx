@@ -9,7 +9,6 @@ import {
   BRIDE_FATHER_NAME,
   BRIDE_MOTHER_NAME,
 } from "../../config";
-import Flower from "../assets/flower1.png";
 
 const Wrapper = styled.div`
   padding-top: 42px;
@@ -51,6 +50,12 @@ const Image = styled.img`
   width: 1.375rem;
   padding-bottom: 42px;
 `;
+const Icon = styled.span`
+  display: flex;
+  justify-content: center;
+  transform: translateY(35%);
+`;
+
 
 const Greeting = () => {
   return (

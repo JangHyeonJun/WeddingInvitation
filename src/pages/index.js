@@ -30,12 +30,15 @@ const DarkGradientWrapper = styled.div`
     rgba(41, 47, 51, 1) 0%
   );
   width: 100%;
+  text-align: center;
+  font-family: pretendard;
 `
 
 const PinkWrapper = styled.div`
   background: var(--pink-background); 
   color: var(--pink-color);
   width: 100%;
+  text-align:center;
 `;
 
 const IndexPage = () => {

@@ -76,30 +76,6 @@ const Location = () => {
     })();
   };
 
-//   const LinksContainer = styled.div`
-//   display: flex;
-//   justify-content: space-between;
-//   padding: 20 20px; /* Add padding for spacing from edges */
-//   margin-top: 20px;
-//   margin-left: auto;
-//   margin-right: auto;
-// `;
-
-// const Link = styled.a`
-//   text-decoration: none;
-//   color: #ffffff; /* Change this to your desired link color */
-//   background: #204231; /* Button background color */
-//   padding: 8px 12px; /* Reduced padding for smaller buttons */
-//   border-radius: 5px;
-//   font-size: 0.75rem;
-//   transition: background-color 0.3s;
-
-//   &:hover {
-//     background: #0c7c44; /* Hover color */
-//   }
-// `;
-
-
   const IconTray = styled.div`
   display: flex;
   justify-content: center; /* Centers the content horizontally */
@@ -114,13 +90,12 @@ const Location = () => {
 
   return (
     <Wrapper>
-      <Divider plain style={{ marginTop: 30, marginBottom: 32 }}>
+      <Divider plain style={{ marginTop: 0, marginBottom: 15 }}>
         <Title>오시는 길</Title>
       </Divider>
       <Content>
         2024년 12월 1일 오후 12시 40분<br/>
         더컨벤션 영등포, 1층 그랜드볼룸
-        <br/>
         <br/>
         <br/>
       </Content>
@@ -129,8 +104,8 @@ const Location = () => {
         className="root_daum_roughmap root_daum_roughmap_landing"
       ></Map>
       <IconTray>
-        <span className="tf xsmall man-with-tuxido"></span>
-        <span className="tf xsmall woman-with-veil"></span>
+        <span className="tf xxsmall man-with-tuxido"></span>
+        <span className="tf xxsmall woman-with-veil"></span>
       </IconTray>
       
       <Content>
@@ -141,6 +116,9 @@ const Location = () => {
       </Content>
       <Content>
         감사를 전합니다.
+        <br/>
+        <br/>
+        <br/>
       </Content>
     </Wrapper>
   );

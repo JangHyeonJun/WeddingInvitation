@@ -626,8 +626,6 @@ body.on-story-each > a.share {
 }
 
 .pswp__button--close {
-  width: 20px; /* Change the width of the button */
-  height: 20px; /* Change the height of the button */
-  /* Optionally, you can hide the button by setting display to none */
-  /* display: none; */
+  width: 1px; /* Change the width of the button */
+  height: 1px; /* Change the height of the button */
 }

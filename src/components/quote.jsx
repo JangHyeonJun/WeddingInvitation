@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import QuotePaper from "../assets/Quote.png";
+import TwoGi from "../images/twogi.svg";
+import MailIcon from "../images/mail.svg";
 
 const Wrapper = styled.div`
   padding-top: 42px;
@@ -44,7 +46,11 @@ const Quote = () => {
   return (
     <Wrapper>
       <IconTray>
-        <span className="tf xsmall couple"></span>
+        <img
+          src={TwoGi}
+          width={50}
+          height={50}
+        />
       </IconTray>
       <Content>
         그리고
@@ -53,7 +59,11 @@ const Quote = () => {
         <br />
       </Content>
       <Icon>
-        <span class="tf xsmall wedding-hall wedding-icon"></span>
+        <img
+          src={MailIcon}
+          width={50}
+          height={50}
+        />
       </Icon>
     </Wrapper>
   );

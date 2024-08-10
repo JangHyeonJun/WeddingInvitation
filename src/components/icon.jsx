@@ -1,6 +1,7 @@
 import React from "react";
 import WeddingCoupleImage from "../images/wedding-couple-icon.svg"; // Adjust the path if necessary
 import MapImage from "../images/map-icon.svg"; // Adjust the path if necessary
+import TwoGiImage from "../images/twogi.svg";
 
 export const WeddingCoupleIcon = ({ width = 24, height = 24 }) => (
   <img
