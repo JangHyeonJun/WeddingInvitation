@@ -1,7 +1,6 @@
-export const WEDDING_INVITATION_URL = "http://localhost:8000/";
-export const KAKAOTALK_API_TOKEN = "-";
-export const KAKAOTALK_SHARE_IMAGE =
-  "https://cdn.pixabay.com/photo/2014/11/13/17/04/heart-529607_960_720.jpg";
+export const WEDDING_INVITATION_URL = "https://hyeonjun-hyein.netlify.app/";
+export const KAKAOTALK_API_TOKEN = "92cc6e2f4b2a5e18e402499545815228";
+export const KAKAOTALK_SHARE_IMAGE = "./src/images/front.jpg";
 
 export const WEDDING_DATE = "2024년 12월 01일, 일요일 오후 12시 40분";
 export const WEDDING_LOCATION = "영등포 더컨벤션, 1층 그랜드볼룸 홀";
