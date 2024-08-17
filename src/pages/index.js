@@ -74,6 +74,7 @@ const IndexPage = () => {
 
       <DarkGradientWrapper>
         <Title />
+        <Greeting />
         <div id="gallery">
           <PhotoGallery />
         </div>
