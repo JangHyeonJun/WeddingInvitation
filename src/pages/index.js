@@ -69,6 +69,7 @@ const IndexPage = () => {
         <meta property="og:description" content="Join us for next level!" />
         <meta property="og:image" content="https://hyeonjun-hyein.netlify.app/static/front-b015f51a29e3a91bd6752f2fd41cf84d.jpg" />
         <meta property="og:url" content="https://hyeonjun-hyein.netlify.app/" />
+        <meta property="og:type" content="website" />
       </Helmet>
 
       <DarkGradientWrapper>
