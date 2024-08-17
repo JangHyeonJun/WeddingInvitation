@@ -16,8 +16,6 @@ import CongratulatoryMoney from "../components/congratulatoryMoney";
 import Share from "../components/share";
 import Quote from "../components/quote";
 
-import KAKAOTALK_SHARE_IMAGE from "../../config";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -68,8 +66,8 @@ const IndexPage = () => {
         <title>현준 ♥ 혜인</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content="현준 ♥ 혜인" />
-        <meta property="og:description" content="Join us for our special day!" />
-        <meta property="og:image" content="KAKAOTALK_SHARE_IMAGE" />
+        <meta property="og:description" content="Join us for next level!" />
+        <meta property="og:image" content="https://hyeonjun-hyein.netlify.app/static/front-b015f51a29e3a91bd6752f2fd41cf84d.jpg" />
         <meta property="og:url" content="https://hyeonjun-hyein.netlify.app/" />
       </Helmet>
 
