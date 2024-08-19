@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `weddingInvitation`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Wedding Invitation`,
+    description: `Join us for our wedding celebration.`,
+    siteUrl: `https://hyeonjun-hyein.netlify.app/`,
+    image: `../src/images/front.jpg`,
   },
   plugins: ["gatsby-plugin-styled-components"]
 };
