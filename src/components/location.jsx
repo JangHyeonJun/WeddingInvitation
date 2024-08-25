@@ -23,6 +23,16 @@ const Content = styled.p`
   max-width: 100%;
 `;
 
+
+const InfoContent = styled.p`
+  font-size: 0.3rem;
+  font-weight: 200;
+  color: var(--pink-color);
+  white-space: nowrap;
+  text-align: center;
+  max-width: 100%;
+`;
+
 const Map = styled.div`
 `;
 
@@ -76,14 +86,6 @@ const Location = () => {
     })();
   };
 
-  const IconTray = styled.div`
-  display: flex;
-  justify-content: center; /* Centers the content horizontally */
-  align-items: center; /* Centers the content vertically if needed */
-  margin-top: 50px;
-  margin-bottom: 20px; /* Adjust spacing as needed */
-  `;
-
   useEffect(() => {
     InstallScript();
   }, [InstallScript]);
@@ -91,10 +93,10 @@ const Location = () => {
   return (
     <Wrapper>
         <br />
-        <br />
       <Divider plain style={{ marginTop: 0, marginBottom: 15 }}>
         <Title>오시는 길</Title>
       </Divider>
+      <br />
       <Content>
         2024년 12월 1일 오후 12시 40분<br/>
         더컨벤션 영등포, 1층 그랜드볼룸

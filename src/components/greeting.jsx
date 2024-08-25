@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.p`
-  font-size: 0.8rem;
+  font-size: 0.45rem;
   color: var(--title-color);
   font-weight: bold;
   opacity: 0.85;
@@ -63,7 +63,9 @@ const Greeting = () => {
       <br />
       <br />
       <br />
-        <Title></Title>
+      <br />
+      <br />
+      <br />
       </Divider>
       <Content>
         함께 맞이하는 네번째 겨울,
@@ -75,7 +77,10 @@ const Greeting = () => {
         <br />
         <br />
         <br />
-        행복하게 살겠습니다.
+        <Title>행복하게 살겠습니다.</Title>
+        <br />
+        <br />
+        <br />
         <br />
         <br />
         <br />
@@ -95,10 +100,11 @@ const Greeting = () => {
           height={30}
         />
       </IconTray>
+      <br />
       <GroomBride>
-        {GROOM_FATHER_NAME} · {GROOM_MOTHER_NAME} 의 차남ㅤ{GROOM_NAME}
+        {GROOM_FATHER_NAME} · {GROOM_MOTHER_NAME} 의 차남 {GROOM_NAME}
         <br />
-        {BRIDE_FATHER_NAME} · {BRIDE_MOTHER_NAME} 의 장녀ㅤ{BRIDE_NAME}
+        {BRIDE_FATHER_NAME} · {BRIDE_MOTHER_NAME} 의 장녀 {BRIDE_NAME}
       </GroomBride>
       <br />
       <br />

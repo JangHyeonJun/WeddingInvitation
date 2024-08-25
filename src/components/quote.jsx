@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import QuotePaper from "../assets/Quote.png";
-import MailIcon from "../images/mail.svg";
+import TadaIcon from "../images/tada.svg";
 
 const Wrapper = styled.div`
   padding-top: 42px;
@@ -11,21 +10,6 @@ const Wrapper = styled.div`
   overflow: visible;
   margin: 0 auto;
   position: relative;
-`;
-
-const Content = styled.span`
-  display: block;
-  margin: 0 auto;
-  font-size: 0.7rem;
-  font-weight: bold;
-  font-family: Pretendard;
-  text-align: center;
-  color: var(--title-color);
-  line-height: 1rem;
-  opacity: 0.75;
-  background-image: url(${QuotePaper});
-  background-repeat: no-repeat;
-  background-position: center;
 `;
 
 const Icon = styled.span`
@@ -40,7 +24,7 @@ const Quote = () => {
       <br />
       <Icon>
         <img
-          src={MailIcon}
+          src={TadaIcon}
           width={50}
           height={50}
         />
