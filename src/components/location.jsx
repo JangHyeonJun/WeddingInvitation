@@ -9,7 +9,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.span`
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   color: var(--pink-color);
   font-weight: bold;
   opacity: 0.85;
@@ -90,6 +90,8 @@ const Location = () => {
 
   return (
     <Wrapper>
+        <br />
+        <br />
       <Divider plain style={{ marginTop: 0, marginBottom: 15 }}>
         <Title>오시는 길</Title>
       </Divider>
@@ -103,23 +105,7 @@ const Location = () => {
         id="daumRoughmapContainer1722790509020"
         className="root_daum_roughmap root_daum_roughmap_landing"
       ></Map>
-      <IconTray>
-        <span className="tf xxsmall man-with-tuxido"></span>
-        <span className="tf xxsmall woman-with-veil"></span>
-      </IconTray>
       
-      <Content>
-        두 사람 앞에 펼쳐질 장밋빛 나날들을
-      </Content>
-      <Content>
-        함께 축복해주신 모든 분들께
-      </Content>
-      <Content>
-        감사를 전합니다.
-        <br/>
-        <br/>
-        <br/>
-      </Content>
     </Wrapper>
   );
 };

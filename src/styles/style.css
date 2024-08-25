@@ -122,9 +122,10 @@ section .clearfix:after {
 
 #front h1 {
   font-weight: 700;
-  line-height: 4rem;
-  font-size: 1.0rem;
+  line-height: 2.3rem;
+  font-size: 1.2rem;
   text-align: center;
+  margin-top: 1rem;
 }
 
 #front h2 {
@@ -244,112 +245,6 @@ section .clearfix:after {
   transform: translateX(-50%);
   height: 2.5rem;
   color: #fff;
-}
-
-#story-each {
-  margin-top: 5vh;
-  padding-bottom: 3vh;
-  background: var(--main-background);
-}
-
-#story-each .content {
-  width: 75%;
-  margin-top: 15vh;
-}
-
-#story-each .content:first-child {
-  margin-top: 10vh;
-}
-
-#story-each .jaeyoung {
-  float: left;
-}
-
-#story-each .soyoung {
-  float: right;
-}
-
-#story-each .soyoung h3 {
-  text-align: right;
-}
-
-#story-each .together {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#story-each .together h3 {
-  text-align: center;
-}
-
-#story-each h3 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  padding: 0 0 1rem 0;
-  margin: 0;
-}
-
-#story-each .photoset .photoset-row:first-child .photoset-item:first-child img {
-  border-top-left-radius: 12px;
-}
-
-#story-each .photoset .photoset-row:first-child .photoset-item:last-child img {
-  border-top-right-radius: 12px;
-}
-
-#story-each .photoset .photoset-row:last-child .photoset-item:first-child img {
-  border-bottom-left-radius: 12px;
-}
-
-#story-each .photoset .photoset-row:last-child .photoset-item:last-child img {
-  border-bottom-right-radius: 12px;
-}
-
-#story-each p {
-  line-height: 1.5rem;
-  padding: 0.5rem 0;
-  margin: 0;
-}
-
-#playground-holder {
-  height: 170px;
-}
-
-#playground {
-  width: 100%;
-  height: 160px;
-  z-index: 2;
-  left: 0;
-  position: relative;
-}
-
-#playground .thumb {
-  display: block;
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  margin: 0;
-  padding: 50px 40px 30px;
-  transition: right 0.25s ease-in-out, left 0.25s ease-in-out, transform 0.25s ease-in-out;
-}
-
-#playground .thumb.jaeyoung {
-  left: 0;
-}
-
-#playground .thumb.soyoung {
-  right: 0;
-}
-
-.on-story-each #playground {
-  position: fixed;
-  bottom: -1px;
-  background: var(--playground-background);
-}
-
-#story-together {
-  padding: 10vh 0 0;
-  min-height: 100vh;
 }
 
 #black-to-pink {

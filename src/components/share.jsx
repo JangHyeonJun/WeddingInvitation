@@ -130,7 +130,7 @@ const Share = () => {
         </LinkShareButton>
       </CopyToClipboard>
       
-      Made By HyeonJun
+      Made By HyeonJun & HyeIn
       
       <Divider
         plain

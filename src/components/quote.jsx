@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import QuotePaper from "../assets/Quote.png";
-import TwoGi from "../images/twogi.svg";
 import MailIcon from "../images/mail.svg";
 
 const Wrapper = styled.div`
@@ -29,13 +28,6 @@ const Content = styled.span`
   background-position: center;
 `;
 
-const IconTray = styled.div`
-  display: flex;
-  justify-content: center; /* Centers the content horizontally */
-  align-items: center; /* Centers the content vertically if needed */
-  margin-bottom: 20px; /* Adjust spacing as needed */
-`;
-
 const Icon = styled.span`
   display: flex;
   justify-content: center;
@@ -45,19 +37,7 @@ const Icon = styled.span`
 const Quote = () => {
   return (
     <Wrapper>
-      <IconTray>
-        <img
-          src={TwoGi}
-          width={50}
-          height={50}
-        />
-      </IconTray>
-      <Content>
-        그리고
-        <br />
-        2024년 12월 1일
-        <br />
-      </Content>
+      <br />
       <Icon>
         <img
           src={MailIcon}

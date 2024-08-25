@@ -51,7 +51,6 @@ const LinkButton = styled.a`
   line-height: 1.4rem;
   width: 3rem;
   height: 1.4rem;
-  padding-top: 2.2rem;
   position: absolute;
   bottom: 150.5vh;
   color: #ffffff;
@@ -92,11 +91,11 @@ const Title = () => {
     <FrontSection id="front">
       <Curtain />
       <CenterWrap>
-        <h1>2024.12.01.</h1>
+        <h1>2024.12.01</h1>
         <img
           src={WeddingPlaneImage}
-          width={200}
-          height={250}
+          width={150}
+          height={200}
         />
         <h2>ㅤ</h2>
         <h2>ㅤ</h2>
@@ -107,13 +106,13 @@ const Title = () => {
         onClick={handleScrollToGallery}
         data-margin-top="120"
       >
-        <WeddingCoupleIcon width={50} height={24} />
+        <WeddingCoupleIcon width={40} height={20} />
         웨딩 사진
       </LinkButton>
       <LinkButton className="go-to go-to-welcome"
         onClick={handleScrollToLocation}
         data-margin-top="120">
-        <MapIcon width={30} height={24} />
+        <MapIcon width={25} height={20} />
         오시는 길
       </LinkButton>
     </FrontSection>

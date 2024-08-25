@@ -28,21 +28,14 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.p`
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: bold;
   opacity: 0.85;
   margin-bottom: 0;
 `;
 
-const Content = styled.p`
-  font-size: 0.875rem;
-  line-height: 1.75;
-  opacity: 0.75;
-  margin-bottom: 42px;
-`;
-
 const SubContent = styled.p`
-  font-size: 0.5rem;
+  font-size: 0.4rem;
   font-weight: 800;
   line-height: 1.75;
   opacity: 0.75;
@@ -78,6 +71,8 @@ const CongratulatoryMoney = () => {
 
   return (
     <Wrapper>
+          <br />
+          <br />
       <Title>마음 전하는 곳</Title>
       <ButtonWrap>
         <ContactButton onClick={() => setGroomVisible(true)}>

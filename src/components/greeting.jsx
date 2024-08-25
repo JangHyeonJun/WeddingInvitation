@@ -9,6 +9,7 @@ import {
   BRIDE_FATHER_NAME,
   BRIDE_MOTHER_NAME,
 } from "../../config";
+import TwoGi from "../images/twogi.svg";
 
 const Wrapper = styled.div`
   padding-top: 42px;
@@ -17,7 +18,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.p`
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: var(--title-color);
   font-weight: bold;
   opacity: 0.85;
@@ -26,16 +27,16 @@ const Title = styled.p`
 `;
 
 const Content = styled.p`
-  font-size: 0.5rem;
+  font-size: 0.4rem;
   line-height: 1.75;
   opacity: 0.75;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   width: 100%;
   text-align: center;
 `;
 
 const GroomBride = styled.p`
-  font-size: 0.5rem;
+  font-size: 0.45rem;
   font-weight: 600;
   line-height: 1.75;
   opacity: 0.85;
@@ -44,16 +45,12 @@ const GroomBride = styled.p`
   text-align: center;
 `;
 
-const Image = styled.img`
-  display: block;
-  margin: 0 auto;
-  width: 1.375rem;
-  padding-bottom: 42px;
-`;
-const Icon = styled.span`
+
+const IconTray = styled.div`
   display: flex;
-  justify-content: center;
-  transform: translateY(35%);
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically if needed */
+  margin-bottom: 20px; /* Adjust spacing as needed */
 `;
 
 
@@ -61,29 +58,55 @@ const Greeting = () => {
   return (
     <Wrapper>
       <Divider>
-        <Title>어서옵쇼</Title>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+        <Title></Title>
       </Divider>
       <Content>
-        만수무강 하십쇼
+        함께 맞이하는 네번째 겨울,
         <br />
-        내용은 아직 정하지 못했어요
+        따뜻한 관심과 축복속에
         <br />
-        이건 테스트페이지라 못봄
+        새로운 여행을 떠나려고 합니다.
         <br />
-        킬킬킬킬킬
         <br />
-        곧 완성됩니다 ㅎ.
+        <br />
+        <br />
+        행복하게 살겠습니다.
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <br />
         <br />
       </Content>
+      <IconTray>
+        <img
+          src={TwoGi}
+          width={30}
+          height={30}
+        />
+      </IconTray>
       <GroomBride>
-        {GROOM_FATHER_NAME} · {GROOM_MOTHER_NAME} 의 장남 {GROOM_NAME}
+        {GROOM_FATHER_NAME} · {GROOM_MOTHER_NAME} 의 차남ㅤ{GROOM_NAME}
         <br />
-        {BRIDE_FATHER_NAME} · {BRIDE_MOTHER_NAME} 의 장녀 {BRIDE_NAME}
+        {BRIDE_FATHER_NAME} · {BRIDE_MOTHER_NAME} 의 장녀ㅤ{BRIDE_NAME}
       </GroomBride>
       <br />
       <br />
       <br />
+      
+      <GroomBride>
+      Gallery
+      </GroomBride>
     </Wrapper>
   );
 };
