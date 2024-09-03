@@ -1,4 +1,5 @@
 import React from "react";
+import Helmet from "react-helmet";
 import styled from "styled-components";
 import { WeddingCoupleIcon, MapIcon } from "./icon"; // Ensure path is correct
 import BackgroundImage from "../images/front.jpg"; // Ensure path is correct
@@ -89,6 +90,9 @@ const Title = () => {
 
   return (
     <FrontSection id="front">
+      <Helmet>
+        <link rel="preload" href={BackgroundImage} as="image" />
+      </Helmet>
       <Curtain />
       <CenterWrap>
         <h1>2024.12.01</h1>
