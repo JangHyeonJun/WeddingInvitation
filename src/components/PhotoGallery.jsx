@@ -49,6 +49,7 @@ const PhotoGallery = () => {
                   src={image.source}
                   ref={ref}
                   onClick={open}
+                  loading="lazy"
                 />
               )}
             </Item>
